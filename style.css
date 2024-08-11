@@ -9,8 +9,8 @@ body {
   font-family: serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #333;
-  background-color: #080708;
+  color: #fff;
+  background-color: #fff;
   height: 100%;
 }
 
@@ -24,7 +24,7 @@ body {
   width:100%;
   height: 400px;
   display: flex;
-  background-color: #fff;
+  background-color: #080708;
 }
 
 .navbar {
@@ -38,13 +38,13 @@ body {
 .navbar .container {
   display: flex;
   justify-content: space-between;
-  min-width: 1259px;
   flex-wrap:wrap;
   align-content: center;
   padding-left: 0px;
   padding-right: 0px;
   margin-left: 10px;
   margin-right: 10px;
+  flex-basis: 100%;
 }
 
 .nav {
@@ -52,6 +52,7 @@ body {
   gap: 20px;
   flex:5;
   justify-content: flex-end;
+  padding-right: 10px;
 }
 
 .header .container {
@@ -97,28 +98,29 @@ body {
 .ad div {
   width: 150px;
   height: 60px;
-  background-color: yellow;
+  background-color: #fff;
   margin: 20px;
 }
 
 .quote {
   width: 100%;
-  background-color: #fff;
+  background-color: #080708;
   flex: 1;
   margin: 20px;
 }
 
 .box {
-  width: 300px;
+  flex-basis: 300px;
   height: 300px;
-  background-color: #fff;
-  color: #fff;
   margin: 10px;
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: flex-start;
   flex-wrap: wrap;
+  border-style: dotted;
+  border-color: #080708;
+  min-width:250px;
 }
 
 li {
@@ -135,7 +137,8 @@ a {
 }
 
 button {
-  max-width: 100px;
+  min-height: 33px;
+  max-width: 200px;
 }
 
 
@@ -150,6 +153,8 @@ button {
 .quote .container {
   display: flex;
   justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .ad .container {
@@ -170,7 +175,7 @@ button {
 }
 
 h1, p {
-  color: #080708;
+  color: #fff;
 }
 
 .footer .container p {
@@ -178,10 +183,23 @@ h1, p {
 }
 
 .box h2 {
-  color: #080708;
   align-self: center;
+  color: #080708;
 }
 
 .box p {
   padding:10px;
+  color: #080708;
 }
+
+.ad .container p {
+  color: #080708;
+}
+
+/* @media(max-width: 768px) {
+  .boxes .container {
+    flex-direction:column;
+    text-align:center;
+  }
+}
+*/ add this maybe??
