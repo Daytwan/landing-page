@@ -10,8 +10,9 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #fff;
-  background-color: #fff;
+  background-color: #080708;
   height: 100%;
+  min-width: 467px;
 }
 
 .container {
@@ -52,7 +53,7 @@ body {
   gap: 20px;
   flex:5;
   justify-content: flex-end;
-  padding-right: 10px;
+  padding: 10px;
 }
 
 .header .container {
@@ -98,8 +99,9 @@ body {
 .ad div {
   width: 150px;
   height: 60px;
-  background-color: #fff;
   margin: 20px;
+  border-style: solid;
+  border-color: #ff0;
 }
 
 .quote {
@@ -119,8 +121,8 @@ body {
   justify-content: flex-start;
   flex-wrap: wrap;
   border-style: dotted;
-  border-color: #080708;
-  min-width:250px;
+  border-color: #fff;
+  min-width: 200px;
 }
 
 li {
@@ -184,22 +186,41 @@ h1, p {
 
 .box h2 {
   align-self: center;
-  color: #080708;
+  color: #fff;
 }
 
 .box p {
   padding:10px;
-  color: #080708;
+  color: #fff;
 }
 
 .ad .container p {
-  color: #080708;
+  color: #fff;
 }
 
-/* @media(max-width: 768px) {
+@media(max-width: 768px) {
   .boxes .container {
-    flex-direction:column;
-    text-align:center;
+    flex-direction: column;
+    padding-top: 20px;
+    text-align: center;
+    margin-top: 10px;
   }
 }
-*/ add this maybe??
+
+@media(max-width: 768px) {
+  .header {
+    height: 200px;
+  }
+}
+
+.logo {
+  padding: 10px;
+}
+
+#intro {
+  font-size: 20px;
+}
+
+.ad .container button {
+  background-color: #0000ff;
+}
