@@ -12,7 +12,10 @@ body {
   color: #fff;
   background-color: #080708;
   height: 100%;
-  min-width: 467px;
+  min-width: 500;
+  font-family: arial, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 .container {
@@ -62,6 +65,7 @@ body {
   flex-direction: column;
   align-items:center;
   color: #fff;
+  flex-shrink: 0;
 }
 
 .middle {
@@ -70,6 +74,7 @@ body {
   justify-content: center;
   height:600px;
   align-items:center;
+  flex: 2;
 }
 
 .footer {
@@ -79,7 +84,6 @@ body {
   width: 100%;
   margin-top: auto;
   background-color: #080708;
-  color: red;
 }
 
 .footer .container {
@@ -98,7 +102,7 @@ body {
 
 .ad div {
   width: 150px;
-  height: 60px;
+  height: 70px;
   margin: 20px;
   border-style: solid;
   border-color: #ff0;
@@ -112,7 +116,6 @@ body {
 }
 
 .box {
-  flex-basis: 300px;
   height: 300px;
   margin: 10px;
   display: flex;
@@ -122,7 +125,8 @@ body {
   flex-wrap: wrap;
   border-style: dotted;
   border-color: #fff;
-  min-width: 200px;
+  min-width: 260px;
+  flex: 1;
 }
 
 li {
@@ -198,21 +202,6 @@ h1, p {
   color: #fff;
 }
 
-@media(max-width: 768px) {
-  .boxes .container {
-    flex-direction: column;
-    padding-top: 20px;
-    text-align: center;
-    margin-top: 10px;
-  }
-}
-
-@media(max-width: 768px) {
-  .header {
-    height: 200px;
-  }
-}
-
 .logo {
   padding: 10px;
 }
@@ -223,4 +212,21 @@ h1, p {
 
 .ad .container button {
   background-color: #0000ff;
+}
+
+.navbar a:hover {
+  color: #ff0;
+}
+
+@media(max-width: 768px) {
+  .boxes .container {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: auto;
+    flex-basis: 200px;
+    max-width: 350px;
+    align-content: center;
+  }
 }
